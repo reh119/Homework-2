@@ -3,7 +3,7 @@
 #include <string>
 #include "dictionary.h"
 
-using namespace std; 
+
 
 int main() 
 { 

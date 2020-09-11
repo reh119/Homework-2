@@ -1,8 +1,12 @@
 #include <iostream>
 #include <string>
-using namespace std;
+
 #ifndef DICTIONARY_H
 #define DICTIONARY_H
+
+using std::string;
+using std::cout;
+using std::endl;
 
 int MinWordLength(string words[], int length);  
 
