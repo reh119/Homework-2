@@ -60,6 +60,35 @@ return total/length;
 
 
 int MostCommonWordLength(string words[], int length) {
-    // TODO implement this function
-    throw "Unsupported Operation";
+    int maxcount=0; 
+    int arr[length]; // new array yo hold int length
+
+for (int i =0 ; i < length ; i++){
+arr[i]=words[i].length(); 
+
+}
+for (int i =0; i < length ; i++){
+  int count =1; 
+  for (int j=i+1; j < length; j++)
+if (arr[i]==arr[j])
+  count++; 
+  if (count > maxcount)
+  maxcount=count; 
+ 
+
+}
+for (int i =0; i < length ; i++){
+  int count =1;
+  for (int j = i+1; j< length;j++)
+  if (arr[i]==arr[j])
+  count ++; 
+  if (count == maxcount)
+  return arr[i] ; 
+  
+
+}
+
+return -1; 
+
+   
 }
